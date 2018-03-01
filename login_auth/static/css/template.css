@@ -1,0 +1,36 @@
+.login{
+	height: 200px;
+    width: 440px;
+	position:absolute;
+	top: calc(50% - 200px/2);
+	left: calc(50% - 440px/2);
+}
+.wrapp_form{
+	width: 470px;
+	left: calc(50% - 470px/2);
+}
+.login div{
+	margin-bottom: 20px;
+}
+.login div input{
+	float: right;
+    padding: 2px 5px;
+    font-size: 20px;
+	margin-top: -2px;
+}
+.login div label{
+	font-size: 20px;
+}
+#submit{
+	width: 100%;
+    padding: 10px;
+    border: 0;
+    font-size: 20px;
+}
+.register{
+	text-align: center;
+}
+.errorlist li{
+	list-style-type:none;
+	color: red;
+}

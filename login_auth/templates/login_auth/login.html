@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Вход</title>
+	<link rel="stylesheet" href="{% static 'css/template.css' %}" />
+  </head>
+  <body>
+	
+	{% block login_auth %}
+	<div class="login">
+		<form action="/" method="POST">
+			{% csrf_token %}
+			<div class="username">
+				<label for="username">Имя пользователя:</label>
+				<input type="text" name="username" id="username">
+			</div>
+			<div class="password">
+				<label for="password">Пароль:</label>
+				<input type="password" name="password" id="password">
+			</div>
+			{% if login_error %}
+			<label class="error">{{ login_error }}</label>
+			{% endif %}
+			<input id="submit" type="submit" value="Войти">
+		</form>
+		<p class="register"><a  href="/register/">Еще не зарегистрированы? Тогда вам сюда!</a></p>
+	</div>
+	{% endblock login_auth %}
+	
+	
+  </body>
+</html>
