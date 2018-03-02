@@ -20,7 +20,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
-    #url(r'^auth/', include('login_auth.urls')),
-
-    url(r'', include('login_auth.urls')),
+    url(r'^auth/', include('login_auth.urls')),
+    url(r'', include('matrix1.urls')),
 ]

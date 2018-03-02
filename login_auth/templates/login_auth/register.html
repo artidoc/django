@@ -3,12 +3,22 @@
 <html>
   <head>
     <title>Регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="{% static 'css/template.css' %}" />
   </head>
   <body>
+    <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 logo">
+                    <a href="\"><img src="{% static 'img/logo.png' %}" /></a>
+                </div>
+            </div>
+        </div>
     <div  class="wrapp_form login">
 
-            <form action="/register/" method="POST">
+            <form action="/auth/register/" method="POST">
 
                 {% csrf_token %}
 

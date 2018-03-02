@@ -1,13 +1,13 @@
 .login{
 	height: 200px;
-    width: 440px;
+    width: 460px;
 	position:absolute;
 	top: calc(50% - 200px/2);
-	left: calc(50% - 440px/2);
+	left: calc(50% - 460px/2);
 }
 .wrapp_form{
-	width: 470px;
-	left: calc(50% - 470px/2);
+	width: 510px;
+	left: calc(50% - 510px/2);
 }
 .login div{
 	margin-bottom: 20px;
@@ -29,8 +29,62 @@
 }
 .register{
 	text-align: center;
+    margin-top: 10px;
 }
 .errorlist li{
 	list-style-type:none;
 	color: red;
+}
+.header, .footer{
+    height: 60px;
+    background-color: #212121;
+}
+.logo img{
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.logo{
+    float:left;
+}
+.logout a{
+    float: right;
+    margin: 20px 80px;
+    color: white;
+}
+.logout a:hover{
+    color: #1B79C7;
+}
+.main p{
+    font-size: 20px;
+}
+.main p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0563b1;
+}
+.main{
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+/*.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}*/
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
 }
